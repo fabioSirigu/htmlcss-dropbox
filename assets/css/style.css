@@ -296,6 +296,10 @@ li {
       margin: 80px auto;
 }
 
+.business_info h2 {
+      font-size: 2rem;
+}
+
 .business_title {
       width: 100%;
 }
@@ -319,4 +323,17 @@ li {
       margin-top: 1.5rem;
       font-size: 0.9rem;
 }
+
+.business_client {
+      width: 50%;
+      margin-top: 50px;
+}
+
+.business_client a {
+      display: inline-block;
+      padding-top: 50px;
+      text-decoration: underline;
+      color: blue;
+}
+
 /* #endregion main */
