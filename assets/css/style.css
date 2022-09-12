@@ -5,7 +5,6 @@
 }
 
 body {
-      max-width: 1200px;
       font-family: 'Open Sans', sans-serif;
       color: var(--bg_dark);
 }
@@ -20,6 +19,14 @@ body {
 }
 
 /* #region utilities */
+
+.btn {
+      padding: 0.2rem 1rem;
+      background-color: var(--bg_primary);
+      color: var(--bg_white);
+      cursor: pointer;
+      border: none;
+}
 
 a {
       text-decoration: none;
@@ -37,6 +44,8 @@ a {
       position: fixed;
       font-size: 0.7rem;
       padding:0.5rem;
+      background-color: var(--bg_white);
+      z-index: 100;
 }
 
 .logo {
@@ -54,11 +63,55 @@ a {
       padding: 1rem 0.5rem;
 }
 
-.start {
-      padding: 0.2rem 1rem;
-      background-color: var(--bg_primary);
-      color: var(--bg_white);
-      cursor: pointer;
-}
 
 /* #endregion header */
+
+/* #region main */
+
+#site_main {
+      padding-top: 50px;
+}
+.jumbo {
+      background-color: var(--bg_light);
+}
+
+.jumbo_container {
+      width: 70%;
+      margin: auto;
+      padding-top: 2rem;
+}
+
+.jumbo_title {
+      font-size: 2.5rem;
+      font-weight: 800;
+}
+
+.jumbo_description {
+      position: relative;
+      height: 350px;
+}
+
+.jumbo_description div {
+      width: 30%;
+      padding: 1rem 0;
+}
+
+.jumbo_description button,
+.jumbo_container h6 {
+      margin: 1rem 0;
+}
+
+.jumbo_description i {
+      font-size: 3rem;
+      position: absolute;
+      bottom: 0.5rem;
+}
+.jumbo_description img {
+      width: 70%;
+      position: absolute;
+      top: 1rem;
+      right: 0;
+}
+
+
+/* #endregion main */
