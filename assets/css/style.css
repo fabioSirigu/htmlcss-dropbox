@@ -252,5 +252,7 @@ li {
       padding: 0.3rem 2rem;
 }
 
-
+.enterprise_description h5 {
+      margin: 2rem 0;
+}
 /* #endregion main */
