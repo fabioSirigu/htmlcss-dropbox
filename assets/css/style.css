@@ -285,7 +285,38 @@ li {
 }
 
 .description_partner button {
-      font-size: 2rem;
+      font-size: 1.2rem;
       padding: 0.5rem 1rem;
+      border: 1px solid;
+      background-color: var(--bg_white);
+}
+
+.business_info {
+      width: 60%;
+      margin: 80px auto;
+}
+
+.business_title {
+      width: 100%;
+}
+
+.row_business {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+}
+
+.card_business {
+      width: calc((100% / 12) * 4);
+      padding: 2rem 1.5rem;
+}
+
+.card_business > img {
+      width: 100%;
+}
+
+.card_business > p {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
 }
 /* #endregion main */
