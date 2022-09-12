@@ -3,3 +3,62 @@
       padding: 0;
       box-sizing: border-box;
 }
+
+body {
+      max-width: 1200px;
+      font-family: 'Open Sans', sans-serif;
+      color: var(--bg_dark);
+}
+
+:root {
+      --bg_dark: #000000;
+      --bg_primary: #0061FF;
+      --bg_important: #61082B;
+      --bg_light: #B4D0E7;
+      --bg_lighter: #F5F5F5;
+      --bg_white: #FFFFFF;
+}
+
+/* #region utilities */
+
+a {
+      text-decoration: none;
+      color: var(--bg_dark);
+}
+/* #endregion utilities */
+
+/* #region header */
+.head_menu {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      font-size: 0.7rem;
+      padding:0.5rem;
+}
+
+.logo {
+      width: 90px;
+}
+
+.head_menu ul {
+      display: flex;
+      align-items: center;
+}
+
+.head_menu li {
+      list-style: none;
+      text-align: center;
+      padding: 1rem 0.5rem;
+}
+
+.start {
+      padding: 0.2rem 1rem;
+      background-color: var(--bg_primary);
+      color: var(--bg_white);
+      cursor: pointer;
+}
+
+/* #endregion header */
