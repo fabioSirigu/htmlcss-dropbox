@@ -261,4 +261,31 @@ li {
       margin: 2rem 0;
 }
 
+.find_partner {
+      width: 60%;
+      margin: auto;
+      display: flex;
+}
+
+.img_partner {
+      width: calc((100% / 12) * 8);
+}
+
+.img_partner > img {
+      max-width: 100%;
+}
+
+.description_partner {
+      width: calc((100% / 12) * 4);
+      padding: 2.5rem;
+}
+
+.description_partner p {
+      padding: 2rem 0;
+}
+
+.description_partner button {
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+}
 /* #endregion main */
