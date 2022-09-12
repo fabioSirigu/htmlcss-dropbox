@@ -32,6 +32,10 @@ a {
       text-decoration: none;
       color: var(--bg_dark);
 }
+
+li {
+      list-style: none;
+}
 /* #endregion utilities */
 
 /* #region header */
@@ -58,7 +62,6 @@ a {
 }
 
 .head_menu li {
-      list-style: none;
       text-align: center;
       padding: 1rem 0.5rem;
 }
@@ -137,10 +140,16 @@ a {
 
 .card {
       width: calc((100% * 12) / 3);
-      height: 500px;
+      height: 800px;
       border: 1px solid;
 }
 
+.card_description {
+      width: 80%;
+      margin: auto;
+      padding-top: 2rem;
+      
+}
 .card_type {
       text-align: center;
       padding: 0.5rem;
@@ -152,11 +161,6 @@ a {
       font-weight: 300;
 }
 
-.sub_type {
-      margin-top: 2rem;
-      margin-left: 2rem;
-}
-
 .sub_type h3 {
       padding-bottom: 0.5rem;
 }
@@ -166,6 +170,51 @@ a {
 }
 
 .sub_period {
+      font-weight: 300;
+      padding-bottom: 2rem;
+}
+
+.sub_function {
+      padding: 2rem 0;
+}
+
+.sub_function li {
+      padding: 0.8rem 0;
+      display: flex;
+}
+.sub_function h4 {
+      display: inline-block;
+      font-weight: 300;
+      font-size: 0.8rem;
+}
+
+.sub_icon {
+      width: calc((100% / 12) * 2);
+}
+
+.description_function {
+      width: calc((100% / 12) * 10);
+      margin-left: -1rem;
+}
+
+.btn_try {
+      margin: auto;
+      max-width: max-content;
+}
+
+.btn_try > .btn {
+      padding: 0.6rem 2rem;
+      margin-bottom: 2rem;
+}
+
+.buy_now > a {
+      text-decoration: underline;
+      color: blue;
+}
+
+.card_container hr {
+      width: 3rem;
+      margin: 3rem 0;
       font-weight: 300;
 }
 /* #endregion main */
