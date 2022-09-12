@@ -336,4 +336,44 @@ li {
       color: blue;
 }
 
+.member_container {
+      width: 100%;
+      display: flex;
+}
+
+.member {
+      width: calc((100% / 12) * 4);
+      display: flex;
+      flex-wrap: wrap;
+}
+
+.member_card {
+      width: calc((100% / 12) * 6);
+}
+
+.member_card img {
+      width: 30%;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.member_card_center {
+      width: 100%;
+      padding: 40px;
+}
+
+.member_card_center img {
+      width: 40%;
+
+}
+
+.member hr {
+      width: 20%;
+      margin: 40px 0;
+      font-weight: 300;
+      color: var(--bg_lighter)
+}
+
 /* #endregion main */
