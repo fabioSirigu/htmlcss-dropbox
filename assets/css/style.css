@@ -178,11 +178,13 @@ li {
       padding: 2rem 0;
 }
 
-.sub_function li {
+.sub_function li,
+.highlights li {
       padding: 0.8rem 0;
       display: flex;
 }
-.sub_function h4 {
+.sub_function h4,
+.highlights h4 {
       display: inline-block;
       font-weight: 300;
       font-size: 0.8rem;
@@ -192,7 +194,8 @@ li {
       width: calc((100% / 12) * 2);
 }
 
-.description_function {
+.description_function,
+.description_highlights {
       width: calc((100% / 12) * 10);
       margin-left: -1rem;
 }
@@ -217,4 +220,14 @@ li {
       margin: 3rem 0;
       font-weight: 300;
 }
+
+.title_highlights {
+      margin: 0.8rem 0;
+}
+
+.check_icon {
+      color: var(--bg_primary);
+      width: calc((100% / 12) * 2);
+}
+
 /* #endregion main */
