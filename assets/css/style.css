@@ -130,6 +130,11 @@ li {
       height: 500px;
 }
 
+.jumbo_description::after {
+      clear: both;
+      display: table;
+      content: "";
+}
 .jumbo_description div {
       padding: 1rem 0;
       float: left;
