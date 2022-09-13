@@ -477,5 +477,43 @@ li {
       justify-content: space-between;
       padding: 30px 0;
       border-bottom: 2px solid var(--bg_lighter);
+}
+.faq_windows:last-child {
+      margin-bottom: 100px;
+}
+
+#site_footer {
+      width: 100%;
+      background-color: var(--bg_dark);
+}
+
+.footer_container {
+      width: 80%;
+      margin: auto;
+      padding: 100px 0;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      flex-basis: 600px ;
+}
+
+.footer_col_6 {
+      width: calc(100% / 12 * 6);
+      display: flex;
+      justify-content: space-around;
+      flex-basis: 600px;
+}
+
+.list_title {
+      font-weight: 600;
+      font-size: 14px;
+      padding-bottom: 12px;
+}
+
+.list_credits li {
+      font-size: 12px;
+      padding: 5px 0;
+}
+
 
 /* #endregion main */
