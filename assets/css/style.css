@@ -456,6 +456,26 @@ li {
       padding: 0.6rem 1.2rem;
       background-color: var(--bg_white);
       color: var(--bg_dark);
-
 }
+
+.faq {
+      width: 100%;
+}
+
+.faq_container {
+      width: 60%;
+      margin: auto;
+}
+
+.faq_title {
+      font-size: 30px;
+      padding: 80px 0;
+      border-bottom: 2px solid var(--bg_lighter);
+}
+.faq_windows {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 0;
+      border-bottom: 2px solid var(--bg_lighter);
+
 /* #endregion main */
