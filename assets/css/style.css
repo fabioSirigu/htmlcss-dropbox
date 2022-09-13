@@ -16,6 +16,13 @@ body {
       --bg_light: #B4D0E7;
       --bg_lighter: #F5F5F5;
       --bg_white: #FFFFFF;
+      --bg_primary_light: #0093CE;
+      --bg_blue_dark: #0D2481;
+      --bg_green_light: #A2D39B;
+      --bg_fire: #D5001F;
+      --bg_passion: #FF1C1C;
+      --bg_bird: #FFD830;
+
 }
 
 /* #region utilities */
@@ -202,7 +209,6 @@ li {
 .description_function,
 .description_highlights {
       width: calc((100% / 12) * 10);
-      margin-left: -1rem;
 }
 
 .btn_try {
@@ -230,6 +236,9 @@ li {
       margin: 0.8rem 0;
 }
 
+.title_highlights > h4 {
+      font-weight: 600;
+}
 .check_icon {
       color: var(--bg_primary);
       width: calc((100% / 12) * 2);
@@ -349,24 +358,28 @@ li {
 
 .member_card {
       width: calc((100% / 12) * 6);
+      aspect-ratio: 1/1;
 }
 
 .member_card img {
-      width: 30%;
+      width: 50%;
       position: relative;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
 }
 
+svg {
+      color: white;
+}
 .member_card_center {
       width: 100%;
       padding: 40px;
+      background-color: var(--bg_lighter);
 }
 
 .member_card_center img {
-      width: 40%;
-
+      width: 50%;
 }
 
 .member hr {
@@ -376,4 +389,40 @@ li {
       color: var(--bg_lighter)
 }
 
+#designit {
+      background-color: var(--bg_green_light);
+      background-image: url(../img/designit.svg);
+      background-size: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+}
+
+#arizona {
+      background-color: var(--bg_important);
+}
+
+#florida {
+      background-color: var(--bg_primary_light);
+}
+
+#topps {
+      background-color: var(--bg_passion);
+}
+
+#world_bicycle {
+      background-color: var(--bg_fire);
+}
+
+#hearst {
+      background-color: var(--bg_light);
+}
+
+#lonely {
+      background-color: var(--bg_blue_dark);
+}
+
+#clear_channel {
+      background-color: var(--bg_bird);
+}
 /* #endregion main */
