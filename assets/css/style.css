@@ -36,6 +36,9 @@ body {
       border: none;
 }
 
+.btn:hover {
+      box-shadow: 2px 5px 16px 0px #0B325E;
+}
 a {
       text-decoration: none;
       color: var(--bg_dark);
@@ -59,10 +62,22 @@ li {
       padding:0.5rem;
       background-color: var(--bg_white);
       z-index: 100;
+      font-size: 18px;
+}
+
+.left_menu {
+      display: flex;
+      align-items: center;
+}
+
+.right_menu {
+      display: flex;
+      align-items: center;
 }
 
 .logo {
-      width: 90px;
+      width: 100%;
+      padding: 0 10px;
 }
 
 .head_menu ul {
@@ -72,11 +87,19 @@ li {
 
 .head_menu li {
       text-align: center;
-      padding: 1rem 0.5rem;
+      padding: 0.8rem;
 }
 
-.head_menu a:hover .head_menu li {
+.head_menu li:hover {
       border-bottom: 1px solid;
+      cursor: pointer;
+}
+
+.btn_header {
+      padding: 0 10px;
+}
+.btn_header > button {
+      font-size: 18px;
 }
 
 /* #endregion header */
@@ -120,6 +143,10 @@ li {
       padding: 1rem 0;
 }
 
+.jumbo_description button {
+      font-size: 18px;
+}
+
 .jumbo_description button,
 .jumbo_container h6 {
       margin: 1rem 0;
@@ -143,12 +170,14 @@ li {
 .business_container > h2 {
       font-size: 2rem;
 }
-.check {
-      display: inline-block;
-      margin-top: 2rem;
-      padding-right: 2rem;
+
+.check_container {
+      padding:30px 0 ;
 }
 
+.check {
+      padding-right: 10px;
+}
 .card_container {
       margin: 2rem 0;
       display: flex;
@@ -476,12 +505,15 @@ li {
       padding: 80px 0;
       border-bottom: 2px solid var(--bg_lighter);
 }
+
 .faq_windows {
       display: flex;
       justify-content: space-between;
       padding: 30px 0;
       border-bottom: 2px solid var(--bg_lighter);
 }
+
+
 .faq_windows:last-child {
       margin-bottom: 100px;
 }
@@ -506,15 +538,19 @@ li {
 
 .list_title {
       font-weight: 600;
-      font-size: 14px;
+      font-size: 18px;
       padding-bottom: 12px;
 }
 
-.list_credits li {
-      font-size: 12px;
-      padding: 5px 0;
+.list_credits a {
+      font-size: 14px;
+      padding: 8px 0;
+      color: white;
 }
 
+.list_credits a:hover {
+      text-decoration: underline;
+}
 .footer_col > .list_credits:first-child {
       border-bottom: 2px solid lightgray;
       padding-bottom: 50px;
