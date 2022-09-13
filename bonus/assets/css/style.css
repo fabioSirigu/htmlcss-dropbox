@@ -1,0 +1,87 @@
+.jumbo_section {
+      width: 100%;
+      display: flex;
+}
+
+.col_4 {
+      width: calc((100% / 12) * 4);
+}
+.col_8 {
+      width: calc((100% / 12) * 8);
+}
+
+.jumbotron_sx {
+      padding: 50px;
+      color: white;
+      background-color: black;
+}
+
+.jumbotron_sx h1 {
+      font-weight: 800;
+      padding: 10px 0;
+      font-size: 46px;
+}
+
+.jumbotron_sx button {
+      margin: 50px 0;
+      padding: 20px 10px;
+      font-size: 20px;
+}
+
+.jumbotron_sx a {
+      color: white;
+}
+
+a:hover {
+      text-decoration: underline;
+}
+
+.jumbotron_dx {
+      background-color: darkblue;
+      display: flex;
+      justify-content: center;
+}
+.jumbotron_dx img {
+      width: 60%;
+}
+
+.ordered {
+      width: 100%;
+      background-color: lightgray;
+}
+
+.title_ordered {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+      font-size: 46px;
+      padding: 40px 0;
+}
+
+.ordered_container {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+}
+
+.card_ordered {
+      width: calc((100% / 12) * 4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 5px;
+      flex-basis: 500px;
+      background-color: slategray;
+}
+
+.card_ordered img {
+      width: 80%;
+}
+
+.card_ordered div {
+      padding: 10px 3px;
+      background-color: lightgray;
+}
