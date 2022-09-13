@@ -143,6 +143,10 @@ li {
 .jumbo_sx {
       width: 30%;
 }
+.product_link:hover {
+      text-decoration: underline;
+      scale: 1.5;
+}
 .jumbo_img {
       width: 70%;
       padding: 1rem 0;

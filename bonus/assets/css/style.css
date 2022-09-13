@@ -48,6 +48,7 @@ a:hover {
 .ordered {
       width: 100%;
       background-color: lightgray;
+      padding: 50px 0;
 }
 
 .title_ordered {
