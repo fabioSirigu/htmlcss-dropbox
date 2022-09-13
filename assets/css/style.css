@@ -282,18 +282,17 @@ li {
       width: 100%;
       margin-top: 2rem;
       border: 2px solid var(--bg_lighter);
-      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+}
+
+.card_type {
+      width: 100%;
 }
 
 .enterprise_description {
       width: calc((100% / 12) * 8);
       padding: 1rem 2rem
-}
-
-.card_center button {
-      position: absolute;
-      top: 55px;
-      right: 2rem;
 }
 
 .card_center .btn {
@@ -304,6 +303,10 @@ li {
       margin: 2rem 0;
 }
 
+.contact_office {
+      width: calc((100% / 12) * 4);
+      padding: 1rem 2rem;
+}
 .find_partner {
       width: 60%;
       margin: auto;
@@ -513,9 +516,16 @@ li {
       border-bottom: 2px solid var(--bg_lighter);
 }
 
-
 .faq_windows:last-child {
       margin-bottom: 100px;
+}
+
+.faq_windows_hidden {
+      display: none;
+}
+
+.faq_windows:hover .faq_windows_hidden{
+      display: block;
 }
 
 #site_footer {
