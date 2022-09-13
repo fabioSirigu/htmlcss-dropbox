@@ -39,6 +39,7 @@ body {
 a {
       text-decoration: none;
       color: var(--bg_dark);
+      cursor: pointer;
 }
 
 li {
@@ -74,6 +75,9 @@ li {
       padding: 1rem 0.5rem;
 }
 
+.head_menu a:hover .head_menu li {
+      border-bottom: 1px solid;
+}
 
 /* #endregion header */
 
@@ -499,12 +503,6 @@ li {
       display: flex;
       justify-content: space-between;
 }
-/* .footer_col_6 {
-      width: calc(100% / 12 * 6);
-      display: flex;
-      justify-content: space-around;
-      flex-basis: 600px;
-} */
 
 .list_title {
       font-weight: 600;
