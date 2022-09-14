@@ -51,6 +51,11 @@ li {
 /* #endregion utilities */
 
 /* #region header */
+
+
+.logo:hover {
+      scale: 1.1;
+}
 .head_menu {
       width: 100%;
       height: 50px;
@@ -78,6 +83,7 @@ li {
 .logo {
       width: 100%;
       padding: 0 10px;
+      transition: 0.2s ease-in-out;
 }
 
 .head_menu ul {
