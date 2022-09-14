@@ -50,13 +50,20 @@ li {
       list-style: none;
 }
 
+
+.d_flex_center {
+      display: flex;
+      align-items: center;
+}
+
+.w100 {
+      width: 100%;
+}
+
 /* #endregion utilities */
 
 /* #region header */
 
-.logo:hover {
-      scale: 1.1;
-}
 
 .head_menu {
       width: 100%;
@@ -72,25 +79,14 @@ li {
       font-size: 18px;
 }
 
-.left_menu {
-      display: flex;
-      align-items: center;
-}
-
-.right_menu {
-      display: flex;
-      align-items: center;
-}
-
 .logo {
       width: 100%;
       padding: 0 10px;
       transition: 0.2s ease-in-out;
 }
 
-.head_menu ul {
-      display: flex;
-      align-items: center;
+.logo:hover {
+      scale: 1.1;
 }
 
 .head_menu li {
@@ -112,7 +108,6 @@ li {
 
 .dropdown {
       position: relative;
-      display: inline-block;
 }
     
 .dropdown-content {
@@ -205,10 +200,6 @@ li {
       bottom: -150px;
 }
 
-.jumbo_description img {
-      max-width: 100%;
-}
-
 .jumbo_sx .btn {
       font-size: 22px;
 }
@@ -280,14 +271,14 @@ label {
       padding-top: 2rem;
       
 }
+
 .card_type {
-      text-align: center;
       padding: 0.5rem;
       border-bottom: 2px solid var(--bg_lighter);      
-}
-
-.card_type > h4 {
-      display: inline;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
       font-weight: 300;
 }
 
@@ -316,7 +307,6 @@ label {
 
 .sub_function h4,
 .highlights h4 {
-      display: inline-block;
       font-weight: 300;
       font-size: 0.8rem;
 }
@@ -373,10 +363,6 @@ label {
       flex-wrap: wrap;
 }
 
-.card_type {
-      width: 100%;
-}
-
 .enterprise_description {
       width: calc((100% / 12) * 8);
       padding: 1rem 2rem
@@ -409,10 +395,6 @@ label {
       width: calc((100% / 12) * 8);
 }
 
-.img_partner > img {
-      max-width: 100%;
-}
-
 .description_partner {
       width: calc((100% / 12) * 4);
       padding: 2.5rem;
@@ -442,9 +424,6 @@ label {
       font-size: 2rem;
 }
 
-.business_title {
-      width: 100%;
-}
 
 .row_business {
       display: flex;
@@ -457,10 +436,6 @@ label {
       padding: 2rem 1.5rem;
 }
 
-.card_business > img {
-      width: 100%;
-}
-
 .card_business > p {
       margin-top: 1.5rem;
       font-size: 0.9rem;
@@ -471,9 +446,10 @@ label {
       margin-top: 50px;
 }
 
+.business_client > h2 {
+      margin-bottom: 50px;
+}
 .business_client a {
-      display: inline-block;
-      padding-top: 50px;
       text-decoration: none;
       color: blue;
 }
@@ -601,9 +577,6 @@ label {
 /* #endregion call_to_action */
 
 /* #region FAQ */
-.faq {
-      width: 100%;
-}
 
 .faq_container {
       width: 60%;
