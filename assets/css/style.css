@@ -673,7 +673,6 @@ footer > section {
 }
 
 .footer_col {
-      position: relative;
       display: flex;
       justify-content: space-between;
 }
