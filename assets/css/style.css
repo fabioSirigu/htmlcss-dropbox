@@ -533,6 +533,7 @@ li {
 .faq_windows_hidden {
       display: none;
       padding: 30px 0;
+      transition: 0.8s ease-in-out;
       background-color: var(--bg_lighter);
 }
 
@@ -540,6 +541,13 @@ li {
       display: block;
 }
 
+.arrow_faq {
+      transform: rotate(-90deg);
+      transition: 0.3s ease-in-out;
+}
+.faq_windows:hover .arrow_faq {
+      transform: rotate(0deg);
+}
 /* #endregion FAQ */
 #site_footer {
       width: 100%;
