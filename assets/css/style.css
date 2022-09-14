@@ -39,6 +39,7 @@ body {
 .btn:hover {
       box-shadow: 2px 5px 16px 0px #0B325E;
 }
+
 a {
       text-decoration: none;
       color: var(--bg_dark);
@@ -48,10 +49,10 @@ a {
 li {
       list-style: none;
 }
+
 /* #endregion utilities */
 
 /* #region header */
-
 
 .logo:hover {
       scale: 1.1;
@@ -113,7 +114,7 @@ li {
       display: inline-block;
 }
     
-    .dropdown-content {
+.dropdown-content {
       display: none;
       position: absolute;
       background-color:var(--bg_primary_light);
@@ -136,6 +137,7 @@ li {
       text-decoration: underline;
       color: var(--bg_lighter);
 }
+
 /* #endregion header */
 
 /* #region main */
@@ -143,6 +145,7 @@ li {
 #site_main {
       padding-top: 50px;
 }
+/* #region Jumbo */
 .jumbo {
       background-color: var(--bg_light);
 }
@@ -169,6 +172,7 @@ li {
       display: table;
       content: "";
 }
+
 .jumbo_description div {
       padding: 1rem 0;
       float: left;
@@ -177,10 +181,12 @@ li {
 .jumbo_sx {
       width: 30%;
 }
+
 .product_link:hover {
       text-decoration: underline;
       scale: 1.5;
 }
+
 .jumbo_img {
       width: 70%;
       padding: 1rem 0;
@@ -200,10 +206,14 @@ li {
       position: relative;
       bottom: -150px;
 }
+
 .jumbo_description img {
       max-width: 100%;
 }
 
+/* #endregion jumbo */
+
+/* #region business_container */
 
 .business_container {
       width: 60%;
@@ -221,6 +231,32 @@ li {
 .check {
       padding-right: 10px;
 }
+
+input {
+      border: 1px solid var(--bg_lighter);
+      border-radius:50%;
+      padding: 5px 15px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+}
+input[type=button]:hover {
+	border:1px solid var(--bg_light);
+}
+
+input[type=button]:hover + label {
+	text-decoration: underline;
+}
+
+input[type=button]:focus {
+	background-color: var(--bg_blue_dark);
+}
+
+label {
+      font-size: 16px;
+      padding-right: 20px;
+}
+
 .card_container {
       margin: 2rem 0;
       display: flex;
@@ -272,6 +308,7 @@ li {
       padding: 0.8rem 0;
       display: flex;
 }
+
 .sub_function h4,
 .highlights h4 {
       display: inline-block;
@@ -316,6 +353,7 @@ li {
 .title_highlights > h4 {
       font-weight: 600;
 }
+
 .check_icon {
       color: var(--bg_primary);
       width: calc((100% / 12) * 2);
@@ -350,6 +388,11 @@ li {
       width: calc((100% / 12) * 4);
       padding: 1rem 2rem;
 }
+
+/* #endregion business_container */
+
+/* #region find_partner */
+
 .find_partner {
       width: 60%;
       margin: auto;
@@ -380,6 +423,9 @@ li {
       background-color: var(--bg_white);
       color: black;
 }
+/* #endregion find_partner */
+
+/* #region buiness_info */
 
 .business_info {
       width: 60%;
@@ -425,6 +471,9 @@ li {
       text-decoration: underline;
       color: blue;
 }
+/* #endregion buiness_info */
+
+/* #region member_container */
 
 .member_container {
       width: 100%;
@@ -500,6 +549,9 @@ li {
 #clear_channel {
       background-color: var(--bg_bird);
 }
+/* #endregion member_container */
+
+/* #region call_to_action */
 
 .call_to_action {
       width: 100%;
@@ -536,6 +588,8 @@ li {
       background-color: var(--bg_white);
       color: var(--bg_dark);
 }
+/* #endregion call_to_action */
+
 
 /* #region FAQ */
 .faq {
@@ -584,6 +638,11 @@ li {
       transform: rotate(0deg);
 }
 /* #endregion FAQ */
+
+/* #endregion main */
+
+/* #region footer */
+
 #site_footer {
       width: 100%;
       background-color: var(--bg_dark);
@@ -633,5 +692,5 @@ footer > section {
       cursor: pointer; 
       color: white;     
 }
+/* #endregion footer */
 
-/* #endregion main */
