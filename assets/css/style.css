@@ -699,15 +699,18 @@ footer > section {
 }
 
 .language_container {
-      width: max-content;
-      position: absolute;
-      bottom: -50px;
+      padding: 20px 0;
 }
+
 #language {
       background: none;
       border: none;
       cursor: pointer; 
       color: white;     
+}
+
+#language > option {
+      color: black;
 }
 /* #endregion footer */
 
