@@ -57,6 +57,7 @@ li {
 .logo:hover {
       scale: 1.1;
 }
+
 .head_menu {
       width: 100%;
       height: 50px;
@@ -192,11 +193,8 @@ li {
       padding: 1rem 0;
 }
 
-.jumbo_description button {
-      font-size: 18px;
-}
 
-.jumbo_description button,
+.jumbo_description .btn,
 .jumbo_container h6 {
       margin: 1rem 0;
 }
@@ -211,6 +209,13 @@ li {
       max-width: 100%;
 }
 
+.jumbo_sx .btn {
+      font-size: 22px;
+}
+
+.jumbo_sx > p {
+      padding-bottom: 30px;
+}
 /* #endregion jumbo */
 
 /* #region business_container */
@@ -235,7 +240,7 @@ li {
 input {
       border: 1px solid var(--bg_lighter);
       border-radius:50%;
-      padding: 5px 15px;
+      padding: 1px 10px;
       text-decoration: none;
       margin: 4px 2px;
       cursor: pointer;
@@ -249,7 +254,7 @@ input[type=button]:hover + label {
 }
 
 input[type=button]:focus {
-	background-color: var(--bg_blue_dark);
+	background-color: var(--bg_primary);
 }
 
 label {
@@ -327,12 +332,13 @@ label {
 
 .btn_try {
       margin: auto;
+      margin-bottom: 30px;
       max-width: max-content;
 }
 
 .btn_try > .btn {
       padding: 0.6rem 2rem;
-      margin-bottom: 2rem;
+      font-size: 12px;
 }
 
 .buy_now > a {
@@ -416,7 +422,7 @@ label {
       padding: 2rem 0;
 }
 
-.description_partner button {
+.description_partner .btn {
       font-size: 1.2rem;
       padding: 0.5rem 1rem;
       border: 1px solid;
@@ -468,8 +474,12 @@ label {
 .business_client a {
       display: inline-block;
       padding-top: 50px;
-      text-decoration: underline;
+      text-decoration: none;
       color: blue;
+}
+
+.business_client a:hover {
+      text-decoration: underline;
 }
 /* #endregion buiness_info */
 
@@ -581,7 +591,7 @@ label {
       align-items: flex-start;
 }
 
-.to_action_container button {
+.to_action_container .btn {
       font-size: 20px;
       font-weight: 300;
       padding: 0.6rem 1.2rem;
@@ -589,7 +599,6 @@ label {
       color: var(--bg_dark);
 }
 /* #endregion call_to_action */
-
 
 /* #region FAQ */
 .faq {
@@ -610,7 +619,7 @@ label {
 .faq_windows {
       display: flex;
       justify-content: space-between;
-      padding: 30px 0;
+      padding: 30px 10px;
       border-bottom: 2px solid var(--bg_lighter);
       cursor: pointer;
 }
@@ -619,20 +628,28 @@ label {
       margin-bottom: 100px;
 }
 
-.faq_windows_hidden {
+.dropdown_faq {
       display: none;
-      padding: 30px 0;
-      transition: 0.8s ease-in-out;
+      position: absolute;
+      padding: 30px 10px;
       background-color: var(--bg_lighter);
+      width: 100%;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      font-size: 12px;
+      color: var(--bg_blue_dark);
+      z-index: 1;
+      bottom: -65px;
+      left: 50%;
+      transform: translate(-50%);
 }
 
-.faq_windows:hover + .faq_windows_hidden {
+.faq_windows:hover .dropdown_faq {
       display: block;
 }
 
 .arrow_faq {
       transform: rotate(-90deg);
-      transition: 0.3s ease-in-out;
+      transition: 0.15s ease-in-out;
 }
 .faq_windows:hover .arrow_faq {
       transform: rotate(0deg);
